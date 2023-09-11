@@ -1,14 +1,443 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Course project HTML and CSS</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Text</h1>
+<div class="page">
+  <header class="header header-container upper-text">
+    <div class="header-list container">
+      <img src="svg/noemi-logo.svg" class="logo" alt="Логотип компании">
+      <nav>
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              Посты
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              Статьи
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              Теги
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              Темы
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <h1 class="header_title">
+      Блог о творчестве, спорте, и образе жизни
+    </h1>
+  </header>
+  <section class="section header-container upper-text">
+    <h2 class="section-title">
+      Сейчас в тренде
+    </h2>
+    <div class="section-trends">
+      <article class="trends-block">
+        <img src="images/trend1.jpg" class="trends-picture" alt="Сейчас в тренде: сад на подоконнике">
+        <div class="trends-post">
+          <div class="trend-box">
+            <ul class="container-category">
+              <li class="category-list-title">
+                <a href="" class="list-title-text">Lifestyle</a>
+              </li>
+              <li class="category-list-title">
+                <a href="" class="list-title-text">Interior</a>
+              </li>
+            </ul>
+            <div class="trends-title">
+              Сейчас в тренде: сад на подоконнике
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="trends-block">
+        <img src="images/trend2.jpg" class="trends-picture" alt="сыры на красивых  картинках из интернета: какие они на вкус?">
+        <div class="trends-post">
+          <div class="trend-box">
+            <ul class="container-category">
+              <li class="category-list-title">
+                <a href="" class="list-title-text">Food</a>
+              </li>
+            </ul>
+            <div class="trends-title">
+              сыры на красивых  картинках из интернета: какие они на вкус?
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="trends-block">
+        <img src="images/trend3.jpg" class="trends-picture" alt="СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ">
+        <div class="trends-post">
+          <div class="trend-box">
+            <ul class="container-category">
+              <li class="category-list-title">
+                <a href="" class="list-title-text">Lifestyle</a>
+              </li>
+              <li class="category-list-title">
+                <a href="" class="list-title-text">tRAVEL</a>
+              </li>
+            </ul>
+            <div class="trends-title">
+              СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="trends-block">
+        <img src="images/trend4.jpg" class="trends-picture" alt="Сейчас в тренде: сКОЛЬКО
+              ВИТАМИНА c В ЛИМОНАХ?">
+        <div class="trends-post">
+          <div class="trend-box">
+            <ul class="container-category">
+              <li class="category-list-title">
+                <a href="" class="list-title-text">food</a>
+              </li>
+              <li class="category-list-title">
+                <a href="" class="list-title-text">health</a>
+              </li>
+            </ul>
+            <div class="trends-title">
+              Сейчас в тренде: сКОЛЬКО
+              ВИТАМИНА c В ЛИМОНАХ?
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <div class="main-and-section container">
+    <main class="main">
+      <article class="main-posts">
+        <div class="main-block">
+          <img src="images/last-post1.jpg" class="main-posts-picture" alt="10 мест, ради которых стоит проснуться на рассвете">
+          <div class="main-block-information">
+            <ul class="main-posts-category container-category ">
+              <li class="main-posts-category-title category-list-title">
+                <a href="" class="main-posts-category-text list-title-text">Travel</a>
+              </li>
+              <li class="main-posts-category-title">
+                <a href="" class="main-posts-category-text list-title-text">Health</a>
+              </li>
+            </ul>
+            <div class="main-posts-title upper-text">
+              10 мест, ради которых стоит проснуться на рассвете
+            </div>
+            <div class="main-posts_date-and-author">
+              <div class="main-posts-date">
+                10 июня 2019
+              </div>
+              <div class="main-posts-author">
+                Неизвестный автор
+              </div>
+            </div>
+            <div class="main-text">
+              <p>Итак, вы в Питере. Раннее утро.
+                Лед с рек и каналов уже ушел, запущены фонтаны города…
+                Музеи еще закрыты. Что посмотреть?</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-block">
+          <img src="images/last-post2.jpg" class="main-posts-picture" alt="Йога для начинающих в домашних условиях">
+          <div class="main-block-information">
+            <ul class="main-posts-category container-category">
+              <li class="main-posts-category-title category-list-title">
+                <a href="" class="main-posts-category-text list-title-text">Health</a>
+              </li>
+              <li class="main-posts-category-title">
+                <a href="" class="main-posts-category-text list-title-text">Lifestyle</a>
+              </li>
+            </ul>
+            <div class="main-posts-title upper-text">
+              Йога для начинающих в домашних условиях
+            </div>
+            <div class="main-posts_date-and-author">
+              <div class="main-posts-date">
+                10 июня 2019
+              </div>
+              <div class="main-posts-author">
+                Неизвестный автор
+              </div>
+            </div>
+            <div class="main-text">
+              <p>Расскажем, какие упражнения выбрать и как
+                сделать коврик для занятий йогой из того,
+                что можно найти в шкафу.</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-block">
+          <img src="images/last-post3.jpg" class="main-posts-picture" alt="Лучшие музыкальные фестивали этого лета">
+          <div class="main-block-information">
+            <ul class="main-posts-category container-category">
+              <li class="main-posts-category-title category-list-title">
+                <a href="" class="main-posts-category-text list-title-text">Music</a>
+              </li>
+            </ul>
+            <div class="main-posts-title upper-text">
+              Лучшие музыкальные фестивали этого лета
+            </div>
+            <div class="main-posts_date-and-author">
+              <div class="main-posts-date">
+                10 июня 2019
+              </div>
+              <div class="main-posts-author">
+                Неизвестный автор
+              </div>
+            </div>
+            <div class="main-text">
+              <p>Лето на носу, а с ним и музыкальные фестивали.
+                На каком же из них вы разобьёте свою палатку?</p>
+              <p>Мы составили список лучших летних фестивалей
+                по всему миру.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="main-block">
+          <img src="images/last-post4.jpg" class="main-posts-picture" alt="Наукоёмкий подход к кулинарии">
+          <div class="main-block-information">
+            <ul class="main-posts-category container-category">
+              <li class="main-posts-category-title category-list-title">
+                <a href="" class="main-posts-category-text list-title-text">Lifestyle</a>
+              </li>
+              <li class="main-posts-category-title">
+                <a href="" class="main-posts-category-text list-title-text">Food</a>
+              </li>
+            </ul>
+            <div class="main-posts-title upper-text">
+              Наукоёмкий подход к кулинарии
+            </div>
+            <div class="main-posts_date-and-author">
+              <div class="main-posts-date">
+                10 июня 2019
+              </div>
+              <div class="main-posts-author">
+                Неизвестный автор
+              </div>
+            </div>
+            <div class="main-text">
+              <p>Узнаем основы проектирования
+                новых пищевых и около-пищевых опытов,
+                вскроем физику, химию и микробиологию еды.</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-block">
+          <img src="images/last-post5.jpg" class="main-posts-picture" alt="Сейчас в тренде: сад на подоконнике">
+          <div class="main-block-information">
+            <ul class="main-posts-category container-category">
+              <li class="main-posts-category-title category-list-title">
+                <a href="" class="main-posts-category-text list-title-text">Lifestyle</a>
+              </li>
+              <li class="main-posts-category-title">
+                <a href="" class="main-posts-category-text list-title-text">Interior</a>
+              </li>
+              <li class="main-posts-category-title">
+                <a href="" class="main-posts-category-text list-title-text">Art</a>
+              </li>
+            </ul>
+            <div class="main-posts-title upper-text">
+              делаем модные принты на подушках для интерьера
+            </div>
+            <div class="main-posts_date-and-author">
+              <div class="main-posts-date">
+                10 июня 2019
+              </div>
+              <div class="main-posts-author">
+                Неизвестный автор
+              </div>
+            </div>
+            <div class="main-text">
+              <p>Подушки для дивана целесообразнее заказать в съемных чехлах на молнии,
+                если потребуется чистка подушек, проще снять чехлы,
+                чем везти подушку в химчистку.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <div class="new-posts-and-other">
+      <section class="new-posts">
+        <div class="name-new-posts upper-text">
+          Новые посты
+        </div>
+        <div class="new-post-block">
+          <div class="new-post-block-box">
+            <img src="images/2.jpg" class="new-post-block-box-picture" alt="10 мест, ради которых стоит проснуться на рассвете">
+            <div class="new-post-block-box-information">
+              <div class="new-post-block-box-date">
+                  14 июня 2019
+              </div>
+              <div class="new-post-block-box-title upper-text">
+                10 мест, ради которых стоит проснуться на рассвете
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="new-post-block">
+          <div class="new-post-block-box">
+            <img src="images/2.jpg" class="new-post-block-box-picture" alt="10 мест, ради которых стоит проснуться на рассвете">
+            <div class="new-post-block-box-information">
+              <div class="new-post-block-box-date">
+                14 июня 2019
+              </div>
+              <div class="new-post-block-box-title upper-text">
+                10 мест, ради которых стоит проснуться на рассвете
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="new-post-block">
+          <div class="new-post-block-box">
+            <img src="images/2.jpg" class="new-post-block-box-picture" alt="10 мест, ради которых стоит проснуться на рассвете">
+            <div class="new-post-block-box-information">
+              <div class="new-post-block-box-date">
+                14 июня 2019
+              </div>
+              <div class="new-post-block-box-title upper-text">
+                10 мест, ради которых стоит проснуться на рассвете
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="new-post-block">
+          <div class="new-post-block-box">
+            <img src="images/2.jpg" class="new-post-block-box-picture" alt="10 мест, ради которых стоит проснуться на рассвете">
+            <div class="new-post-block-box-information">
+              <div class="new-post-block-box-date">
+                14 июня 2019
+              </div>
+              <div class="new-post-block-box-title upper-text">
+                10 мест, ради которых стоит проснуться на рассвете
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="new-post-block">
+          <div class="new-post-block-box">
+            <img src="images/2.jpg" class="new-post-block-box-picture" alt="10 мест, ради которых стоит проснуться на рассвете">
+            <div class="new-post-block-box-information">
+              <div class="new-post-block-box-date">
+                14 июня 2019
+              </div>
+              <div class="new-post-block-box-title upper-text">
+                10 мест, ради которых стоит проснуться на рассвете
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <form class="search">
+        <label class="search-group">
+          <input class="field" name="query" placeholder="Найти..." required>
+        </label>
+        <button class="search-group-button"></button>
+      </form>
+
+
+    </div>
+  </div>
+  <section class="our-goods-section container  section">
+    <h2 class="our-goods-name upper-text section-title">
+      Наши изделия
+    </h2>
+    <div class="our-goods-blocks">
+      <article class="our-goods-container">
+        <img src="images/shop-item-desk1.jpg" class="our-goods-picture" alt="Подушка на диван">
+        <div class="our-goods-border">
+          <div class="our-goods-box">
+            <div class="our-goods-title upper-text">
+              Подушка на диван
+            </div>
+            <div class="our-goods-text">
+              Набор из двух подушек с модными принтами. Видео о создании <a href="#">здесь</a>.
+            </div>
+            <div class="price-and-button upper-text">
+              <div class="prices">
+                <div class="old-price">
+                  1000 &#8381
+                </div>
+                <div class="new-price">
+                  800 &#8381
+                </div>
+              </div>
+              <button class="button">в магазин</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="our-goods-container">
+        <img src="images/shop-item-desk1.jpg" class="our-goods-picture" alt="Подушка на диван">
+        <div class="our-goods-border">
+          <div class="our-goods-box">
+            <div class="trends-title">
+              Подушка на диван
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="our-goods-container">
+        <img src="images/shop-item-desk1.jpg" class="our-goods-picture" alt="Подушка на диван">
+        <div class="our-goods-border">
+          <div class="our-goods-box">
+            <div class="trends-title">
+              Подушка на диван
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <footer class="addresses container section">
+    <div class="address-icon">
+      <img src="svg/001-dribbble.svg" class="logo-1" alt="Логотип dribbble">
+      <img src="svg/002-pinterest.svg" class="logo-1" alt="Логотип pinterest">
+      <img src="svg/003-tumblr.svg" class="logo-1" alt="Логотип tumblr">
+    </div>
+    <div class="copyright">
+      Copyright © 2009–2019 City Blog LLC.
+    </div>
+  </footer>
+</div>
 </body>
 </html>
