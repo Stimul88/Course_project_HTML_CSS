@@ -452,13 +452,14 @@ h4 {
 
 .newsletter-email-field {
     background-color: #f4f7f6;
-    width: 100%;
+    width: 246Px;
     display: flex;
     border: 2px solid #f5f7f6;
     padding-left: 16px;
     font-size: 14px;
-    height: 48px;
+    height: 47px;
 }
+  
 
 .newsletter-email-field:focus {
     outline: none;
