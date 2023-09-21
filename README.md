@@ -3,3 +3,7 @@
 </h1>
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,)](https://skillicons.dev)
+
+## Страница сайта:
+
+https://stimul88.github.io/Course_project_HTML_CSS/
