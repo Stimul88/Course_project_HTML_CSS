@@ -1,11 +1,11 @@
 @font-face {
     font-family: OpenSans;
     src: url(../fonts/OpenSans-Bold.woff),
-        url(../fonts/OpenSans-Bold.ttf),
-        url(../fonts/OpenSans-Bold.woff2),
-        url(../fonts/OpenSans-Regular.ttf),
-        url(../fonts/OpenSans-Regular.woff),
-        url(../fonts/OpenSans-Regular.woff2);
+    url(../fonts/OpenSans-Bold.ttf),
+    url(../fonts/OpenSans-Bold.woff2),
+    url(../fonts/OpenSans-Regular.ttf),
+    url(../fonts/OpenSans-Regular.woff),
+    url(../fonts/OpenSans-Regular.woff2);
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 }
 
 a {
-    text-decoration: none;   
+    text-decoration: none;
 }
 
 h4 {
@@ -202,8 +202,8 @@ h4 {
     font-size: 20px;
     line-height: 25px;
     padding-top: 3px;
-    
-    
+
+
 }
 
 .trends-title-link {
@@ -248,8 +248,8 @@ h4 {
     height: 294px;
     top: 0;
     left: 0;
-  }
-  
+}
+
 .main-posts-picture {
     width: 100%;
     height: 100%;
@@ -266,7 +266,7 @@ h4 {
     display: flex;
     font-weight: 900;
     text-transform: uppercase;
-    
+
 }
 
 .main-posts-category-title:hover {
@@ -459,7 +459,7 @@ h4 {
     font-size: 14px;
     height: 47px;
 }
-  
+
 
 .newsletter-email-field:focus {
     outline: none;
@@ -510,7 +510,7 @@ h4 {
 .tags-item-category {
     display: flex;
     flex-wrap: wrap;
-    padding: 0; 
+    padding: 0;
     margin: 0;
 }
 
@@ -560,8 +560,8 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 0; 
-    margin: 0; 
+    padding: 0;
+    margin: 0;
 }
 
 .topic-container:nth-child(n + 2) {
@@ -690,7 +690,7 @@ h4 {
 .new-price {
     font-size: 20px;
 
-    
+
 }
 
 .our-goods-container:nth-child(2)  .new-price {
@@ -747,5 +747,4 @@ h4 {
     font-size: 12px;
     color: #999999;
 }
-
 
