@@ -5,28 +5,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Course project HTML and CSS</title>
-	<link rel="stylesheet" href="css/style_mobile-first.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="page">
 	<header class="header upper-text">
+		<a href="#" class="img-link640">
+			<img src="svg/noemi-logo.svg" class="logo-640" alt="Логотип компании">
+		</a>
 		<div class="menu-btn span">
 			<span></span>
 			<span></span>
 			<span></span>
 		</div>
-		
-		<a href="#" class="img-link640">
-			<img src="svg/noemi-logo.svg" class="logo-640" alt="Логотип компании">
-		</a>
 		<div class="header-list">
-			<a href="#">
+			<a href="#" class="img-link">
 				<img src="svg/noemi-logo.svg" class="logo" alt="Логотип компании">
 			</a>
 			<nav>
-				<button class="menu-button">
-					<span class="menu-button-label">открыть меню</span>
-				</button>
+				
 				<ul class="menu">
 					<li class="menu-item">
 						<a class="menu-link" href="#">
@@ -69,7 +66,7 @@
 		<h2 class="section-title">
 			Сейчас в тренде
 		</h2>
-		<div class="section-trends">
+		<div class="section-trends upper-text">
 			<article class="trends-block">
 				<img src="images/trend1.jpg"
 				     class="trends-picture"
@@ -494,100 +491,105 @@
 		</section>
 	</div>
 </div>
-<section class="our-goods-section">
-	<div class="our-goods-section-name">
-		<h2 class="our-goods-name section-title">
-			Наши изделия
-		</h2>
-	</div>
-	<div class="our-goods-blocks">
-		<article class="our-goods-container">
-			<img src="images/shop-item-desk1.jpg"
-			     srcset = "images/shop-item-mobile1.jpg,
-			     images/shop-item-tablet1.jpg,
-				 images/shop-item-desk1.jpg"
-			     class="our-goods-picture"
-			     alt="Подушка на диван">
-			<div class="our-goods-border">
-				<div class="our-goods-box">
-					<div class="our-goods-title upper-text">
-						Подушки на диван
-					</div>
-					<div class="our-goods-text">
-						Набор из двух подушек с модными принтами. Видео о создании
-						<a href="#" class="our-goods-text-link">здесь</a>.
-					</div>
-					<div class="price-and-button upper-text">
-						<div class="prices">
-							<div class="old-price">
-								1000 &#8381;
-							</div>
-							<div class="new-price">
-								800 &#8381;
-							</div>
+	<section class="our-goods-section">
+		<div class="our-goods-section-name">
+			<h2 class="our-goods-name section-title">
+				Наши изделия
+			</h2>
+		</div>
+		<div class="our-goods-blocks">
+			<article class="our-goods-container">
+				<picture class="our-goods-picture">
+					<source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)"/>
+					<source srcset="images/shop-item-tablet1.jpg" media="(max-width: 1200px)"/>
+					<source srcset="images/shop-item-desk1.jpg" media="(max-width: 1800px)"/>
+					<img src="images/shop-item-desk1.jpg"  alt="Подушка на диван"/>
+				</picture>
+				<div class="our-goods-border">
+					<div class="our-goods-box">
+						<div class="our-goods-title upper-text">
+							Подушки на диван
 						</div>
-						<button class="button-article">в магазин</button>
+						<div class="our-goods-text">
+							Набор из двух подушек с модными принтами. Видео о создании
+							<a href="#" class="our-goods-text-link">здесь</a>.
+						</div>
+						<div class="price-and-button upper-text">
+							<div class="prices">
+								<div class="old-price">
+									1000 &#8381;
+								</div>
+								<div class="new-price">
+									800 &#8381;
+								</div>
+							</div>
+							<button class="button-article">в магазин</button>
+						</div>
 					</div>
 				</div>
-			</div>
-		</article>
-		<article class="our-goods-container">
-			<img src="images/shop-item-desk2.jpg"
-			     srcset = "images/shop-item-mobile2.jpg,
-			     images/shop-item-tablet2.jpg,
-				 images/shop-item-desk2.jpg"
-			     class="our-goods-picture" alt="Кукла «Зайчик»">
-			<div class="our-goods-border">
-				<div class="our-goods-box">
-					<div class="our-goods-title upper-text">
-						Кукла «Зайчик»
-					</div>
-					<div class="our-goods-text">
-						Интерьерная рукодельная кукла «Зайчик»,
-						созданию которой посвящена <a href="#" class="our-goods-text-link">весенняя серия постов</a> в блоге и несколько подкастов.
-					</div>
-					<div class="price-and-button upper-text">
-						<div class="prices">
-							<div class="new-price">
-								3500 &#8381;
-							</div>
+			</article>
+			<article class="our-goods-container">
+				<picture class="our-goods-picture">
+					<source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)"/>
+					<source srcset="images/shop-item-tablet2.jpg" media="(max-width: 1200px)"/>
+					<source srcset="images/shop-item-desk2.jpg" media="(max-width: 1800px)"/>
+					<img src="images/shop-item-desk2.jpg"  alt="Кукла «Зайчик"/>
+				</picture>
+				<div class="our-goods-border">
+					<div class="our-goods-box">
+						<div class="our-goods-title upper-text">
+							Кукла «Зайчик»
 						</div>
-						<button class="button-article">в магазин</button>
+						<div class="our-goods-text">
+							Интерьерная рукодельная кукла «Зайчик»,
+							созданию которой посвящена <a href="#" class="our-goods-text-link">весенняя серия постов</a> в блоге и несколько подкастов.
+						</div>
+						<div class="price-and-button upper-text">
+							<div class="prices">
+								<div class="old-price prices-none">
+									1000 &#8381;
+								</div>
+								<div class="new-price">
+									3500 &#8381;
+								</div>
+							</div>
+							<button class="button-article">в магазин</button>
+						</div>
 					</div>
 				</div>
-			</div>
-		</article>
-		<article class="our-goods-container">
-			<img src="images/shop-item-desk3.jpg"
-			     srcset = "images/shop-item-mobile3.jpg,
-			     images/shop-item-tablet3.jpg,
-				 images/shop-item-desk3.jpg"
-			     class="our-goods-picture" alt="Шестиугольная рамка">
-			<div class="our-goods-border">
-				<div class="our-goods-box">
-					<div class="our-goods-title upper-text">
-						Шестиугольная рамка
-					</div>
-					<div class="our-goods-text">
-						Необычная рамка для украшения дома из видео <a href="#" class="our-goods-text-link">«Как сделать рамку из подручных средств за 30 минут»</a>.
-					</div>
-					<div class="price-and-button upper-text">
-						<div class="prices">
-							<div class="old-price">
-								500 &#8381;
-							</div>
-							<div class="new-price">
-								400 &#8381;
-							</div>
+			</article>
+			<article class="our-goods-container">
+				<picture class="our-goods-picture">
+					<source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)"/>
+					<source srcset="images/shop-item-tablet3.jpg" media="(max-width: 1200px)"/>
+					<source srcset="images/shop-item-desk3.jpg" media="(max-width: 1800px)"/>
+					<img src="images/shop-item-desk3.jpg"  alt="Шестиугольная рамка"/>
+				</picture>
+				<div class="our-goods-border">
+					<div class="our-goods-box">
+						<div class="our-goods-title upper-text">
+							Шестиугольная рамка
 						</div>
-						<button class="button-article">в магазин</button>
+						<div class="our-goods-text">
+							Необычная рамка для украшения дома из видео <a href="#" class="our-goods-text-link">«Как сделать рамку из подручных средств за 30 минут»</a>.
+						</div>
+						<div class="price-and-button upper-text">
+							<div class="prices">
+								<div class="old-price">
+									500 &#8381;
+								</div>
+								<div class="new-price">
+									400 &#8381;
+								</div>
+							</div>
+							<button class="button-article">в магазин</button>
+						</div>
 					</div>
 				</div>
-			</div>
-		</article>
-	</div>
-</section>
-<footer class="addresses section">
+			</article>
+		</div>
+	</section>
+	<footer class="addresses section">
 	<div class="address-icon">
 		<img src="svg/001-dribbble.svg" class="logo-1" alt="Логотип dribbble">
 		<img src="svg/002-pinterest.svg" class="logo-1" alt="Логотип pinterest">
@@ -596,7 +598,49 @@
 	<div class="copyright">
 		Copyright © 2009–2019 City Blog LLC.
 	</div>
-</footer>
+	</footer>
+	<div class="popup-wrapper">
+		<div class="popup">
+			<div class="menu-box">
+				<div class="popup-title section-title">
+					ваш фидбек
+				</div>
+				<div class="how-often">
+				<div class="how-often-text">
+					Как часто вы заходите на сайт?
+				</div>
+				<div class="form-row">
+					<span class="form-hint"></span>
+					<select class="select">
+						<option selected>Почти каждый день</option>
+						<option>Раз в несколько дней</option>
+						<option>Раз в несколько недель</option>
+						<option>Несколько раз в год</option>
+					</select>
+				</div>
+				</div>
+				<div class="mailing-text">
+					Вы подписаны на e-mail рассылку?
+				</div>
+				<div class="radio-group-box">
+					<label class="radio-group">
+						<input type="radio" class="radio" name="radio-group">
+						<span class="radio-group-text">Да</span>
+					</label>
+					<label class="radio-group">
+						<input type="radio" class="radio" name="radio-group">
+						<span class="radio-group-text">Нет</span>
+					</label>
+				</div>
+				<div class="question-text">
+					Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+				</div>
+				<textarea class="field-textarea"
+				          placeholder="Может больше рецептов?"></textarea>
+				<div class="button-popup upper-text">Отправить</div>
+				</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>
