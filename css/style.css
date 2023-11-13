@@ -37,7 +37,6 @@ h4 {
     background-repeat: no-repeat;
     background-color: #000000;
     background-size: cover;
-    background-position: center;
     position: relative;
     z-index: 1;
 }
@@ -122,12 +121,13 @@ h4 {
     .header-list {
         margin: 0 auto;
         max-width: 1170px;
-        padding:28px 245px 0 245px;
+        padding:28px 0 0 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
         position: relative;
+        flex-grow: 1;
     }
     .logo {
         height: 41px;
@@ -245,7 +245,8 @@ h4 {
     }
 }
 
-@media (min-width: 641px) and (max-width: 1200px) {
+
+@media (min-width: 641px) and (max-width: 1200px){
     .section {
         margin-top: 29px;
         display: flex;
@@ -284,7 +285,7 @@ h4 {
     }
 }
 
-@media (min-width: 1201px) {
+@media (min-height: 641px) and (max-height: 1200px) and (orientation: landscape), (min-width: 1201px){
     .section {
         margin-top: 39px;
     }
@@ -298,10 +299,7 @@ h4 {
     .section-trends {
         height: 318px;
         display: flex;
-        flex-direction: row;
         margin-top: 40px;
-        justify-content: space-between;
-        box-sizing: border-box;
     }
     .trends-block {
         position: relative;
@@ -309,10 +307,7 @@ h4 {
         box-sizing: border-box;
     }
     .trend-box {
-        bottom: 14px;
         padding: 32px 30px 32px;
-        margin-left: 21px;
-        margin-right: 21px;
     }
     .trends-title {
         font-size: 20px;
@@ -361,10 +356,15 @@ h4 {
 }
 
 .trend-box {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 90%;
     display: flex;
     box-sizing: border-box;
     flex-direction:column;
     position: absolute;
+    bottom: 15px;
     border: 3px solid rgba(181,159,91,0.6);
 }
 
@@ -458,9 +458,11 @@ h4 {
 @media (min-width: 641px) and (max-width: 1200px) {
     .main-and-section {
         margin-top: 51px;
-        padding-left: 33px;
-        padding-right: 33px;
         justify-content: space-between;
+    }
+    .main{
+        max-width: 392px;
+        padding-left: 34px;
     }
     .main-block{
         flex-direction: column;
@@ -663,7 +665,8 @@ h4 {
 
 @media (min-width: 641px) and (max-width: 1200px) {
     .new-posts-and-other {
-        width: 273px;
+        margin-right: 34px;
+        max-width: 270px;
     }
     .name-new-posts {
         font-size: 14px;
@@ -952,6 +955,9 @@ h4 {
         padding-right: 15px;
         flex-wrap: wrap;
     }
+    .our-goods-title {
+        font-size: 17px;
+    }
     .our-goods-border {
         min-height: 142px;
         margin-top: -31px;
@@ -961,7 +967,6 @@ h4 {
 
 @media (min-width: 641px) and (max-width: 1200px) {
     .our-goods-section {
-        /*width: 702px;*/
         padding-left: 33px;
         padding-right: 33px;
         margin: 0 auto;
@@ -978,17 +983,20 @@ h4 {
         margin: 30px auto 25px;
     }
     .our-goods-name::after {
-        margin-top: 31px;
+        margin-top: 36px;
         margin-left: 45px;
     }
     .our-goods-blocks {
         flex-wrap: wrap;
+        box-sizing: border-box;
     }
     .our-goods-picture {
-        height: 227px;
-        width: 292px;
+    }
+    .our-goods-title {
+        font-size: 17px;
     }
     .our-goods-border {
+        width: 20em;
         min-height: 182px;
         margin-top: -31px;
         padding: 47px 17px 27px;
@@ -1009,18 +1017,22 @@ h4 {
         width: 30%;
     }
     .our-goods-container:nth-child(2) {
-        position: relative;
-        bottom: -20px;
     }
     .our-goods-section-name {
-        margin: 47px auto 3px;
+        margin: 44px auto 25px;
      }
     .our-goods-name:after {
         margin-top: 33px;
         margin-left: 54px;
     }
+    .our-goods-title {
+        font-size: 20px;
+    }
+    .our-goods-picture {
+        max-height: 200px;
+    }
     .our-goods-border {
-        min-height: 142px;
+        min-height: 190px;
         margin-top: -31px;
         padding: 47px 17px 25px;
     }
@@ -1030,7 +1042,6 @@ h4 {
 .our-goods-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .our-goods-name {
@@ -1040,6 +1051,7 @@ h4 {
 .our-goods-blocks {
     display:flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .our-goods-container {
@@ -1051,18 +1063,23 @@ h4 {
 
 .our-goods-picture {
     display: flex;
+    position: relative;
     margin: 0 auto;
 }
 
 .our-goods-border {
-
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    display: flex;
+    position: relative;
     border: 3px solid rgba(181,159,91,0.6);
     z-index: 1;
+    align-items: stretch;
 }
 
-.our-goods-title {
-    font-size: 17px;
-}
+
 
 .our-goods-text {
     margin-top: 6px;
@@ -1151,7 +1168,7 @@ h4 {
 @media (min-width: 1201px) {
     .addresses {
         height: 215px;
-        margin-top: 92px;
+        margin-top: 66px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1280,8 +1297,11 @@ h4 {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
-    /*display: flex;*/
     z-index: 2;
+
+}
+
+.hidden {
     display: none;
 }
 
@@ -1337,8 +1357,6 @@ select:focus {
     font-family: OpenSans-Regular, sans-serif;
 }
 
-
-
 .radio-group:nth-child(1) {
     margin-left: -4px;
 }
@@ -1393,6 +1411,7 @@ select:focus {
     padding-left: 20px;
     border: none;
     font-size: 14px;
+    resize: none;
 }
 
 textarea:focus {
